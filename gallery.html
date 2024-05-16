@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my gallery</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-img">
+            <img src="dog.jpeg" alt="Image 1" onclick="openLightbox(0)">
+        </div>
+        <div class="gallery-img">
+            <img src="x.jpeg" alt="Image 2" onclick="openLightbox(1)">
+        </div>
+        <div class="gallery-img">
+            <img src="h.jpeg" alt="Image 3" onclick="openLightbox(2)">
+        </div>
+        <div class="gallery-img">
+            <img src="t.jpeg" alt="Image 4" onclick="openLightbox(3)">
+        </div>
+        <div class="gallery-img">
+            <img src="s.jpeg" alt="Image 5" onclick="openLightbox(4)">
+        </div>
+        <div class="gallery-img">
+            <img src="l.jpeg" alt="Image 6" onclick="openLightbox(5)">
+        </div>
+        <div class="gallery-img">
+            <img src="r.jpeg" alt="Image 7" onclick="openLightbox(6)">
+        </div>
+        <div class="gallery-img">
+            <img src="header.jpg" alt="Image 8" onclick="openLightbox(7)">
+        </div>
+        <div class="gallery-img">
+            <img src="j.jpeg" alt="Image 9" onclick="openLightbox(8)">
+        </div>
+        <div class="gallery-img">
+            <img src="w.jpeg" alt="Image 10" onclick="openLightbox(9)">
+        </div>
+        <div class="gallery-img">
+            <img src="ttt.jpeg" alt="Image 11" onclick="openLightbox(10)">
+        </div>
+        <div class="gallery-img">
+            <img src="kkk.jpeg" alt="Image 12" onclick="openLightbox(11)">
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close cursor" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
